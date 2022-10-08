@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+    <title>Kontaktformular</title>
+</head>
+
+<body>
+    <div class="menu">
+        <a href="site1.html">Startseite</a>
+        <a href="site2.html">Seite 2</a>
+        <a href="site3.html">Seite 3</a>
+        <a href="contact.html">Kontakt</a>
+    </div>
+    <div class="main">
+        <h1>Kontaktformular</h1>
+        <p>Mit diesem Formular kann Kontakt hergestellt werden</p>
+    </div>
+
+    <div class="impressum">
+        <h1>Impressum</h1>
+        <p>Simon Stauss</p>
+
+        <script type="text/javascript">
+            var mail = new Array();
+            mail[0] = "spam";
+            mail[1] = "@";
+            mail[2] = "spam.de";
+
+            document.write('<p>Email: <a href="mailto:' + getMail() + '">' + getMail() + '</a></p>');
+
+            function getMail() {
+                let string = "";
+                for (let i = 0; i < 3; i++) {
+                    string += mail[i];
+                }
+                return string;
+            }
+        </script>
+
+        <p>Musterstraße 123, 12345 Musterstadt</p>
+    </div>
+</body></html>
